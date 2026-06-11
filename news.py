@@ -19,8 +19,10 @@ OUT = BASE / "docs" / "news.json"
 
 QUERIES = [
     '"xbox 25th anniversary"',
-    '"xbox series x25"',
-    'xbox 25th anniversary console preorder',
+    '"xbox series x25" OR "series x25"',
+    '"series x 25th" OR "xbox series x 25th anniversary"',
+    '"xbox sx 25th" OR "sx 25th"',
+    'xbox "25th anniversary" console (preorder OR "pre-order" OR "limited edition")',
 ]
 UA = "Mozilla/5.0 (compatible; xbox25bot/1.0)"
 MAX_ITEMS = 30
