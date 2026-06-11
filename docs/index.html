@@ -109,7 +109,7 @@
   .sig { font-size:11px; color:var(--dim); margin-top:auto; line-height:1.6; }
   .sig b { color:var(--lime); }
   .sig .hot { color:var(--red); font-weight:800; }
-  .gallery { display:grid; gap:14px; grid-template-columns:1fr; }
+  .gallery { display:grid; gap:14px; grid-template-columns:repeat(auto-fit, minmax(380px, 1fr)); }
   .shot { border-radius:16px; overflow:hidden; border:1px solid var(--stroke); position:relative; aspect-ratio:16/9; }
   .shot img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .6s ease; }
   .shot:hover img { transform:scale(1.06); }
@@ -123,6 +123,37 @@
   .console .ln-err { color:var(--amber); }
   .foot { margin-top:34px; text-align:center; font-size:12px; color:var(--dim); opacity:.75; }
   .foot a { color:var(--lime); }
+  .shot iframe { width:100%; height:100%; border:0; display:block; }
+  .shot.yt { cursor:pointer; }
+  .shot .play { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:68px; height:68px;
+                border-radius:50%; background:rgba(3,10,4,.72); border:2px solid var(--lime);
+                box-shadow:0 0 26px rgba(155,240,11,.45); transition:.2s; }
+  .shot .play::after { content:''; position:absolute; left:55%; top:50%; transform:translate(-50%,-50%);
+                       border:12px solid transparent; border-left:19px solid var(--lime); border-right:0; }
+  .shot.yt:hover .play { background:rgba(155,240,11,.22); box-shadow:0 0 44px rgba(155,240,11,.75); }
+  /* feed de notícias na coluna direita */
+  .cols { display:grid; grid-template-columns:minmax(0,1fr) 330px; gap:24px; align-items:start; }
+  .news { position:sticky; top:16px; max-height:calc(100vh - 32px); overflow:auto; padding:16px;
+          border-radius:18px; background:var(--glass); border:1px solid var(--stroke);
+          backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); }
+  .news h2 { font-size:14px; letter-spacing:1px; display:flex; align-items:center; gap:8px; }
+  .news h2 .dot { width:8px; height:8px; border-radius:50%; background:var(--lime); flex:none;
+                  box-shadow:0 0 8px var(--lime); animation:blink 1.8s ease-in-out infinite; }
+  .news .upd { font-size:10.5px; color:var(--dim); margin:4px 0 12px; }
+  .ni { display:block; padding:11px 13px; border-radius:13px; margin-bottom:9px; text-decoration:none;
+        color:var(--txt); background:var(--glass2); border:1px solid var(--stroke);
+        transition:border-color .2s, transform .2s; }
+  .ni:hover { border-color:var(--lime); transform:translateX(3px); }
+  .ni h4 { font-size:12.5px; line-height:1.4; font-weight:600; font-family:var(--f-body); }
+  .ni .src { display:flex; justify-content:space-between; gap:8px; margin-top:6px; font-size:10.5px; color:var(--dim); }
+  .ni .src b { color:var(--lime); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .ni-empty { font-size:12px; color:var(--dim); }
+  .news::-webkit-scrollbar { width:8px; }
+  .news::-webkit-scrollbar-thumb { background:rgba(155,240,11,.25); border-radius:8px; }
+  @media (max-width:1080px) {
+    .cols { grid-template-columns:1fr; }
+    .news { position:static; max-height:460px; }
+  }
   @media (max-width:760px) {
     .wrap { padding:14px 14px 44px; }
     .topbar { gap:12px; padding:6px 2px 12px; }
@@ -140,6 +171,7 @@
     .cta .btn { width:100%; padding:14px 18px; }
     h2.sec { font-size:17px; margin:28px 2px 12px; }
     .row { gap:10px; }
+    .gallery { grid-template-columns:1fr; }
     .shot .cap { padding:22px 14px 10px; }
     .console { max-height:250px; padding:12px 14px; word-break:break-word; }
     .foot { margin-top:26px; }
@@ -167,6 +199,9 @@
   </div>
   <div class="lifeline" id="lifeline"></div>
 
+  <div class="cols">
+  <main>
+
   <div class="hero">
     <div class="art"></div><div class="veil"></div>
     <div class="in">
@@ -188,10 +223,24 @@
   <div class="gallery">
     <div class="shot"><img src="assets/x25-collection.jpg" alt="Xbox Series X25 Limited Edition">
       <div class="cap">Xbox Series X25 Limited Edition · Novembro 2026</div></div>
+    <div class="shot yt" id="yt" onclick="playYT()" role="button" title="assistir no player">
+      <img src="https://i.ytimg.com/vi/1-INYU6FLgI/maxresdefault.jpg" alt="Xbox 25th Anniversary — vídeo"
+           onerror="this.src='https://i.ytimg.com/vi/1-INYU6FLgI/hqdefault.jpg'">
+      <span class="play"></span>
+      <div class="cap">Xbox 25th Anniversary · assista ao vídeo</div></div>
   </div>
 
   <h2 class="sec">Última varredura</h2>
   <pre class="console" id="log">carregando…</pre>
+
+  </main>
+
+  <aside class="news">
+    <h2><span class="dot"></span>NOTÍCIAS · X25 · EUA</h2>
+    <div class="upd" id="news-upd">carregando…</div>
+    <div id="newslist"></div>
+  </aside>
+  </div>
 
   <div class="foot">xbox25bot · GitHub Actions a cada 10 min · alertas: WhatsApp + push ntfy ·
     <a href="https://github.com/robsgaldino/xbox25bot/actions" target="_blank">histórico de execuções</a></div>
@@ -220,10 +269,32 @@ function sigHtml(st) {
   }).join(' · ') + '</div>';
 }
 
+function ago(ts) {
+  const m = Math.max(0, Math.round((Date.now() / 1000 - ts) / 60));
+  if (m < 60) return `há ${m} min`;
+  const h = Math.round(m / 60);
+  return h < 24 ? `há ${h} h` : `há ${Math.round(h / 24)} d`;
+}
+
+function renderNews(d) {
+  if (!d) return;
+  document.getElementById('news-upd').textContent =
+    d.updated ? 'atualizado ' + ago(d.updated) + ' · Google News EUA' : '';
+  const items = d.items || [];
+  document.getElementById('newslist').innerHTML = items.length
+    ? items.map(n => `<a class="ni" href="${esc(n.url)}" target="_blank" rel="noopener">
+        <h4>${esc(n.title)}</h4>
+        <div class="src"><b>${esc(n.source || '')}</b><span>${n.ts ? ago(n.ts) : ''}</span></div>
+      </a>`).join('')
+    : '<div class="ni-empty">nenhuma notícia encontrada ainda — a próxima varredura atualiza o feed</div>';
+}
+
 async function refresh() {
   let cfg, state, logTxt;
+  const bust = '?t=' + Math.floor(Date.now() / 60000);
+  fetch('news.json' + bust).then(r => r.ok ? r.json() : null)
+    .then(renderNews).catch(() => {});
   try {
-    const bust = '?t=' + Math.floor(Date.now() / 60000);
     [cfg, state] = await Promise.all([
       fetch('config.json' + bust).then(r => r.json()),
       fetch('state.json' + bust).then(r => r.json()),
@@ -280,6 +351,13 @@ async function refresh() {
   document.title = (anyAlert ? 'PRÉ-VENDA! — ' : '') + 'XBOX 25 — Monitor de Pré-venda (nuvem)';
 }
 function buy() { if (alertUrl) window.open(alertUrl, '_blank'); }
+
+function playYT() {
+  document.getElementById('yt').outerHTML =
+    '<div class="shot"><iframe src="https://www.youtube-nocookie.com/embed/1-INYU6FLgI?autoplay=1" ' +
+    'title="Xbox 25th Anniversary" allow="accelerometer; autoplay; encrypted-media; gyroscope; ' +
+    'picture-in-picture; web-share" allowfullscreen></iframe></div>';
+}
 refresh(); setInterval(refresh, 60000);
 
 /* ---------- áudio: blip de hover (estilo dashboard Xbox) + som ambiente original ---------- */

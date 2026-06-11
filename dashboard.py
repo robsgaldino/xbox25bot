@@ -15,6 +15,8 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
+from news import collect as collect_news
+
 BASE = Path(__file__).resolve().parent
 CONFIG_FILE = BASE / "config.json"
 STATE_FILE = BASE / "state.json"
@@ -71,6 +73,20 @@ def status_payload():
         log_tail = []
     return {"generated_at": time.strftime("%d/%m/%Y %H:%M:%S"),
             "sites": sites, "channels": channels, "log": log_tail}
+
+
+_news_cache = {"ts": 0, "items": []}
+NEWS_TTL = 600  # 10 min, mesmo ritmo da varredura
+
+
+def news_payload():
+    if time.time() - _news_cache["ts"] > NEWS_TTL:
+        try:
+            _news_cache["items"] = collect_news()
+            _news_cache["ts"] = time.time()
+        except Exception:
+            _news_cache["ts"] = time.time() - NEWS_TTL + 120  # tenta de novo em 2 min
+    return {"updated": int(_news_cache["ts"]), "items": _news_cache["items"]}
 
 
 PAGE = r"""<!DOCTYPE html>
@@ -231,7 +247,15 @@ PAGE = r"""<!DOCTYPE html>
   .tile.chan.on { border-color:var(--stroke2); }
 
   /* galeria */
-  .gallery { display:grid; gap:14px; grid-template-columns:1fr; }
+  .gallery { display:grid; gap:14px; grid-template-columns:repeat(auto-fit, minmax(380px, 1fr)); }
+  .shot iframe { width:100%; height:100%; border:0; display:block; }
+  .shot.yt { cursor:pointer; }
+  .shot .play { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:68px; height:68px;
+                border-radius:50%; background:rgba(3,10,4,.72); border:2px solid var(--lime);
+                box-shadow:0 0 26px rgba(155,240,11,.45); transition:.2s; }
+  .shot .play::after { content:''; position:absolute; left:55%; top:50%; transform:translate(-50%,-50%);
+                       border:12px solid transparent; border-left:19px solid var(--lime); border-right:0; }
+  .shot.yt:hover .play { background:rgba(155,240,11,.22); box-shadow:0 0 44px rgba(155,240,11,.75); }
   .shot { border-radius:16px; overflow:hidden; border:1px solid var(--stroke); position:relative; aspect-ratio:16/9; }
   .shot img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .6s ease; }
   .shot:hover img { transform:scale(1.06); }
@@ -253,6 +277,29 @@ PAGE = r"""<!DOCTYPE html>
            box-shadow:0 14px 44px rgba(0,0,0,.6); animation:pop .25s ease; }
   @keyframes pop { from { transform:translateY(14px); opacity:0; } }
   .foot { margin-top:34px; text-align:center; font-size:12px; color:var(--dim); opacity:.75; }
+  /* feed de notícias na coluna direita */
+  .cols { display:grid; grid-template-columns:minmax(0,1fr) 330px; gap:24px; align-items:start; }
+  .news { position:sticky; top:16px; max-height:calc(100vh - 32px); overflow:auto; padding:16px;
+          border-radius:18px; background:var(--glass); border:1px solid var(--stroke);
+          backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); }
+  .news h2 { font-size:14px; letter-spacing:1px; display:flex; align-items:center; gap:8px; }
+  .news h2 .dot { width:8px; height:8px; border-radius:50%; background:var(--lime); flex:none;
+                  box-shadow:0 0 8px var(--lime); animation:blink 1.8s ease-in-out infinite; }
+  .news .upd { font-size:10.5px; color:var(--dim); margin:4px 0 12px; }
+  .ni { display:block; padding:11px 13px; border-radius:13px; margin-bottom:9px; text-decoration:none;
+        color:var(--txt); background:var(--glass2); border:1px solid var(--stroke);
+        transition:border-color .2s, transform .2s; }
+  .ni:hover { border-color:var(--lime); transform:translateX(3px); }
+  .ni h4 { font-size:12.5px; line-height:1.4; font-weight:600; font-family:var(--f-body); }
+  .ni .src { display:flex; justify-content:space-between; gap:8px; margin-top:6px; font-size:10.5px; color:var(--dim); }
+  .ni .src b { color:var(--lime); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .ni-empty { font-size:12px; color:var(--dim); }
+  .news::-webkit-scrollbar { width:8px; }
+  .news::-webkit-scrollbar-thumb { background:rgba(155,240,11,.25); border-radius:8px; }
+  @media (max-width:1080px) {
+    .cols { grid-template-columns:1fr; }
+    .news { position:static; max-height:460px; }
+  }
   @media (max-width:760px) {
     .wrap { padding:14px 14px 44px; }
     .topbar { gap:12px; padding:6px 2px 12px; }
@@ -305,6 +352,9 @@ PAGE = r"""<!DOCTYPE html>
   </div>
   <div class="lifeline" id="lifeline" title="bot online — varredura a cada 10 min"></div>
 
+  <div class="cols">
+  <main>
+
   <div class="hero">
     <div class="art"></div><div class="veil"></div>
     <div class="in">
@@ -330,10 +380,24 @@ PAGE = r"""<!DOCTYPE html>
   <h2 class="sec">O alvo</h2>
   <div class="gallery">
     <div class="shot"><img src="/assets/x25-collection.jpg" alt="Xbox Series X25 Limited Edition"><div class="cap">Xbox Series X25 Limited Edition · Novembro 2026</div></div>
+    <div class="shot yt" id="yt" onclick="playYT()" role="button" title="assistir no player">
+      <img src="https://i.ytimg.com/vi/1-INYU6FLgI/maxresdefault.jpg" alt="Xbox 25th Anniversary — vídeo"
+           onerror="this.src='https://i.ytimg.com/vi/1-INYU6FLgI/hqdefault.jpg'">
+      <span class="play"></span>
+      <div class="cap">Xbox 25th Anniversary · assista ao vídeo</div></div>
   </div>
 
   <h2 class="sec">Atividade do bot</h2>
   <pre class="console" id="log"></pre>
+
+  </main>
+
+  <aside class="news">
+    <h2><span class="dot"></span>NOTÍCIAS · X25 · EUA</h2>
+    <div class="upd" id="news-upd">carregando…</div>
+    <div id="newslist"></div>
+  </aside>
+  </div>
 
   <div class="foot">xbox25bot · rodando neste Mac via launchd · checagem a cada 10 min · WhatsApp + push + voz quando abrir</div>
 </div>
@@ -374,7 +438,28 @@ function sigHtml(s) {
   return `<div class="sig">${parts.join(' · ')}</div>`;
 }
 
+function ago(ts) {
+  const m = Math.max(0, Math.round((Date.now() / 1000 - ts) / 60));
+  if (m < 60) return `há ${m} min`;
+  const h = Math.round(m / 60);
+  return h < 24 ? `há ${h} h` : `há ${Math.round(h / 24)} d`;
+}
+
+function renderNews(d) {
+  if (!d) return;
+  document.getElementById('news-upd').textContent =
+    d.updated ? 'atualizado ' + ago(d.updated) + ' · Google News EUA' : '';
+  const items = d.items || [];
+  document.getElementById('newslist').innerHTML = items.length
+    ? items.map(n => `<a class="ni" href="${esc(n.url)}" target="_blank" rel="noopener">
+        <h4>${esc(n.title)}</h4>
+        <div class="src"><b>${esc(n.source || '')}</b><span>${n.ts ? ago(n.ts) : ''}</span></div>
+      </a>`).join('')
+    : '<div class="ni-empty">nenhuma notícia encontrada ainda</div>';
+}
+
 async function refresh() {
+  fetch('/api/news').then(r => r.ok ? r.json() : null).then(renderNews).catch(() => {});
   let d; try { d = await (await fetch('/api/status')).json(); } catch { return; }
   document.getElementById('ts').textContent = d.generated_at;
 
@@ -441,6 +526,13 @@ async function refresh() {
 
 function buy() {
   if (alertUrl) window.open(alertUrl, '_blank');
+}
+
+function playYT() {
+  document.getElementById('yt').outerHTML =
+    '<div class="shot"><iframe src="https://www.youtube-nocookie.com/embed/1-INYU6FLgI?autoplay=1" ' +
+    'title="Xbox 25th Anniversary" allow="accelerometer; autoplay; encrypted-media; gyroscope; ' +
+    'picture-in-picture; web-share" allowfullscreen></iframe></div>';
 }
 
 async function act(kind) {
@@ -583,6 +675,9 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path == "/api/status":
             self._send(200, json.dumps(status_payload(), ensure_ascii=False),
+                       "application/json; charset=utf-8")
+        elif self.path == "/api/news":
+            self._send(200, json.dumps(news_payload(), ensure_ascii=False),
                        "application/json; charset=utf-8")
         elif self.path in ("/", "/index.html"):
             self._send(200, PAGE)
