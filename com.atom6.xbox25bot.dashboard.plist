@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.atom6.xbox25bot.dashboard</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Library/Frameworks/Python.framework/Versions/3.14/bin/python3</string>
+        <string>/Users/robsgaldino/Library/Mobile Documents/com~apple~CloudDocs/bot-search/dashboard.py</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/robsgaldino/Library/Mobile Documents/com~apple~CloudDocs/bot-search</string>
+    <key>KeepAlive</key>
+    <true/>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/robsgaldino/Library/Mobile Documents/com~apple~CloudDocs/bot-search/dashboard.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/robsgaldino/Library/Mobile Documents/com~apple~CloudDocs/bot-search/dashboard.log</string>
+</dict>
+</plist>

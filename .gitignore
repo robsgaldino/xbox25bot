@@ -1,0 +1,14 @@
+# credenciais locais — NUNCA commitar (o repo é público)
+config.json
+
+# estado e logs locais (o CI commita state.json com -f)
+state.json
+bot.log
+dashboard.log
+run.log
+
+# ambiente local
+.claude/
+.DS_Store
+assets/halo3.mp3
+launchd.log
