@@ -32,6 +32,7 @@
     0%, 100% { filter:brightness(1) drop-shadow(0 0 10px rgba(155,240,11,.25)); }
     50% { filter:brightness(1.18) drop-shadow(0 0 26px rgba(155,240,11,.55)); } }
   .brand small { display:block; font-size:12px; color:var(--dim); letter-spacing:2.5px; }
+  .brand .mini { display:none; }
   .top-right { margin-left:auto; display:flex; align-items:center; gap:18px; }
   #clock { font-size:20px; font-weight:300; color:#fff; letter-spacing:1px; font-variant-numeric:tabular-nums; }
   .lifeline { position:relative; height:2px; margin:0 4px 22px; border-radius:2px;
@@ -126,7 +127,8 @@
     .wrap { padding:14px 14px 44px; }
     .topbar { gap:12px; padding:6px 2px 12px; }
     .logo { height:50px; }
-    .brand { display:none; }
+    .brand .full { display:none; }
+    .brand .mini { display:block; font-size:11px; letter-spacing:1.8px; white-space:nowrap; }
     #clock { display:none; }
     .top-right { gap:10px; }
     .lifeline { margin:0 2px 16px; }
@@ -156,7 +158,7 @@
 <div class="wrap">
   <div class="topbar">
     <img class="logo" src="assets/x25-logo.png" alt="Xbox 25">
-    <div class="brand"><small>MONITOR DE PRÉ-VENDA · SERIES X25 · ☁️ NUVEM</small></div>
+    <div class="brand"><small class="full">MONITOR DE PRÉ-VENDA · SERIES X25 · ☁️ NUVEM</small><small class="mini">☁️ NUVEM</small></div>
     <div class="top-right">
       <button class="btn sec" id="musicbtn" style="padding:7px 14px; font-size:12.5px"
               onclick="toggleMusic()">som ambiente: on</button>

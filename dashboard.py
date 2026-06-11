@@ -139,6 +139,7 @@ PAGE = r"""<!DOCTYPE html>
     50% { filter:brightness(1.18) drop-shadow(0 0 26px rgba(155,240,11,.55)); }
   }
   .brand small { display:block; font-size:12px; font-weight:400; color:var(--dim); letter-spacing:2.5px; }
+  .brand .mini { display:none; }
   .top-right { margin-left:auto; display:flex; align-items:center; gap:18px; }
   .gs { display:flex; align-items:center; gap:7px; background:var(--glass); border:1px solid var(--stroke);
         border-radius:99px; padding:6px 14px; backdrop-filter:blur(14px); font-weight:600; font-size:13px; }
@@ -256,7 +257,8 @@ PAGE = r"""<!DOCTYPE html>
     .wrap { padding:14px 14px 44px; }
     .topbar { gap:12px; padding:6px 2px 12px; }
     .logo { height:50px; }
-    .brand { display:none; }
+    .brand .full { display:none; }
+    .brand .mini { display:block; font-size:11px; letter-spacing:1.8px; white-space:nowrap; }
     #clock { display:none; }
     .top-right { gap:10px; }
     .gs { padding:5px 12px; font-size:12px; }
@@ -293,7 +295,7 @@ PAGE = r"""<!DOCTYPE html>
 <div class="wrap">
   <div class="topbar">
     <img class="logo" src="/assets/x25-logo.png?v=4" alt="Xbox 25">
-    <div class="brand"><small>MONITOR DE PRÉ-VENDA · SERIES X25</small></div>
+    <div class="brand"><small class="full">MONITOR DE PRÉ-VENDA · SERIES X25</small><small class="mini">🖥️ MAC</small></div>
     <div class="top-right">
       <button class="btn sec" id="musicbtn" style="display:none; padding:7px 14px; font-size:12.5px"
               onclick="toggleMusic()">música: off</button>
