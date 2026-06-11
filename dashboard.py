@@ -455,15 +455,64 @@ fetch('/assets/halo3.mp3', { method:'HEAD' }).then(r => {
   if (musicAvailable) updateMusicBtn();
 }).catch(() => {});
 
+// som ambiente gerado em tempo real (original, clima Halo) — usado quando não há mp3
+let amb = null;
+function ambientStart() {
+  if (amb) return;
+  actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+  const ctx = actx, t0 = ctx.currentTime;
+  const master = ctx.createGain();
+  master.gain.setValueAtTime(0.0001, t0);
+  master.gain.linearRampToValueAtTime(.06, t0 + 5);
+  master.connect(ctx.destination);
+  const lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 850; lp.connect(master);
+  const dly = ctx.createDelay(2); dly.delayTime.value = .6;
+  const fb = ctx.createGain(); fb.gain.value = .4;
+  lp.connect(dly); dly.connect(fb); fb.connect(dly); dly.connect(master);
+  // Dm — Bb — C — Dsus: modal, coral, espaçoso
+  const CHORDS = [[73.42,110,146.83,220], [58.27,87.31,116.54,174.61],
+                  [65.41,98,130.81,196], [73.42,110,146.83,185]];
+  let i = 0;
+  function chord() {
+    if (!amb) return;
+    const t = ctx.currentTime, dur = 14;
+    CHORDS[i % CHORDS.length].forEach(f => {
+      [0, .8].forEach(det => {
+        const o = ctx.createOscillator(), g = ctx.createGain();
+        o.type = 'sine'; o.frequency.value = f * (1 + det / 600);
+        g.gain.setValueAtTime(.0001, t);
+        g.gain.linearRampToValueAtTime(.4, t + 5);
+        g.gain.setValueAtTime(.4, t + dur - 5);
+        g.gain.linearRampToValueAtTime(.0001, t + dur);
+        o.connect(g); g.connect(lp); o.start(t); o.stop(t + dur + .1);
+      });
+    });
+    i++;
+  }
+  amb = { master, timer: setInterval(chord, 9000) };
+  chord();
+}
+function ambientStop() {
+  if (!amb) return;
+  clearInterval(amb.timer);
+  const m = amb.master;
+  m.gain.linearRampToValueAtTime(0.0001, actx.currentTime + 1.5);
+  setTimeout(() => m.disconnect(), 2000);
+  amb = null;
+}
+
 function updateMusicBtn() {
   const b = document.getElementById('musicbtn');
   b.style.display = 'inline-block';
-  b.textContent = 'música: ' + (musicWanted && !music.paused ? 'on' : musicWanted ? 'on (clique na página)' : 'off');
+  b.textContent = (musicAvailable ? 'música' : 'som ambiente') + ': ' + (musicWanted ? 'on' : 'off');
 }
 function toggleMusic() {
   musicWanted = !musicWanted;
   localStorage.setItem('x25music', musicWanted ? 'on' : 'off');
-  if (musicWanted) music.play().catch(() => {}); else music.pause();
+  unlocked = true;
+  if (musicWanted) {
+    if (musicAvailable) music.play().catch(() => {}); else ambientStart();
+  } else { music.pause(); ambientStop(); }
   updateMusicBtn();
 }
 // navegadores exigem 1 gesto antes de tocar áudio — o 1º clique/toque libera tudo
@@ -471,12 +520,14 @@ function unlock() {
   unlocked = true;
   actx = actx || new (window.AudioContext || window.webkitAudioContext)();
   if (actx.state === 'suspended') actx.resume();
-  if (musicAvailable && musicWanted && music.paused) {
-    music.play().then(updateMusicBtn).catch(() => {});
+  if (musicWanted) {
+    if (musicAvailable && music.paused) music.play().then(updateMusicBtn).catch(() => {});
+    else if (!musicAvailable) ambientStart();
   }
 }
 document.addEventListener('pointerdown', unlock);
 document.addEventListener('keydown', unlock);
+updateMusicBtn();
 function toast(msg) {
   const t = document.getElementById('toast');
   t.textContent = msg; t.style.display = 'flex';
