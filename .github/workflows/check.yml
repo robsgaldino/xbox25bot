@@ -2,11 +2,12 @@ name: xbox25bot
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # a cada 10 min (o GitHub pode atrasar alguns minutos)
-  workflow_dispatch:          # botão de rodar manualmente
+    - cron: "*/10 * * * *"   # rede de segurança — religa a corrente se ela morrer
+  workflow_dispatch:          # botão manual + elo da corrente contínua
 
 permissions:
   contents: write
+  actions: write              # o run redispara a si mesmo ao terminar
 
 concurrency:
   group: xbox25bot
@@ -15,7 +16,7 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 45
     env:
       TZ: America/Sao_Paulo   # timestamps no fuso do Robson
     steps:
@@ -25,31 +26,44 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Varredura das lojas
+      - name: Vigia contínua — varredura a cada 60 s por ~30 min
         env:
           XBOX25_CONFIG: config.cloud.json
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           CALLMEBOT_PHONE: ${{ secrets.CALLMEBOT_PHONE }}
           CALLMEBOT_APIKEY: ${{ secrets.CALLMEBOT_APIKEY }}
-        run: python xbox25bot.py
-
-      - name: Notícias americanas (Google News RSS)
-        run: python news.py || echo "falha ao buscar notícias — mantém o news.json anterior"
-
-      - name: Publicar estado para o dashboard (GitHub Pages)
         run: |
-          mkdir -p docs
-          cp state.json docs/state.json
-          cp config.cloud.json docs/config.json
-          tail -n 120 bot.log > docs/bot.log || true
           git config user.name "xbox25bot"
           git config user.email "xbox25bot@users.noreply.github.com"
-          git add -f state.json docs/state.json docs/config.json docs/bot.log
-          [ -f docs/news.json ] && git add -f docs/news.json || true
-          if git diff --cached --quiet; then
-            echo "sem mudanças para commitar"
-          else
-            git pull --rebase --autostash origin main
-            git commit -m "varredura $(date -u '+%Y-%m-%d %H:%M UTC')"
-            git push
-          fi
+          publica() {
+            mkdir -p docs
+            cp state.json docs/state.json
+            cp config.cloud.json docs/config.json
+            tail -n 120 bot.log > docs/bot.log || true
+            python news.py || true
+            git add -f state.json docs/state.json docs/config.json docs/bot.log
+            [ -f docs/news.json ] && git add -f docs/news.json || true
+            if ! git diff --cached --quiet; then
+              git pull --rebase --autostash origin main || true
+              git commit -m "varredura $(date -u '+%Y-%m-%d %H:%M UTC')" || true
+              git push || true
+            fi
+          }
+          for i in $(seq 1 30); do
+            t0=$(date +%s)
+            python xbox25bot.py || true
+            # alerta sai na hora pelos canais; aqui só decidimos quando publicar o estado
+            if tail -n 8 bot.log | grep -q "ALERTA"; then
+              publica
+            elif [ $((i % 10)) -eq 0 ]; then
+              publica
+            fi
+            dt=$(( $(date +%s) - t0 ))
+            [ "$dt" -lt 60 ] && sleep $(( 60 - dt ))
+          done
+
+      - name: Próximo elo da corrente (auto-redispara)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run xbox25bot --repo ${{ github.repository }} || true

@@ -350,7 +350,7 @@ PAGE = r"""<!DOCTYPE html>
       <div id="clock">--:--</div>
     </div>
   </div>
-  <div class="lifeline" id="lifeline" title="bot online — varredura a cada 10 min"></div>
+  <div class="lifeline" id="lifeline" title="bot online — varredura a cada 1 min"></div>
 
   <div class="cols">
   <main>
@@ -361,7 +361,7 @@ PAGE = r"""<!DOCTYPE html>
       <div class="pill" id="pill"><span class="dot"></span><span id="pill-txt">monitorando</span></div>
       <h1 id="headline">Caçando a pré-venda do <span>Series X25</span></h1>
       <p id="sub">Xbox Series X25 Limited Edition — translúcido verde OG, lançamento em novembro de 2026.
-         O bot varre as lojas oficiais americanas a cada 10 minutos.</p>
+         O bot varre as lojas oficiais americanas a cada 1 minuto.</p>
       <div class="cta">
         <button class="btn buy" id="buybtn" onclick="buy()" title="acende quando a pré-venda abrir">COMPRAR — PRÉ-VENDA FECHADA</button>
         <button class="btn" onclick="act('check')">Checar agora</button>
@@ -379,7 +379,6 @@ PAGE = r"""<!DOCTYPE html>
 
   <h2 class="sec">O alvo</h2>
   <div class="gallery">
-    <div class="shot"><img src="/assets/x25-collection.jpg" alt="Xbox Series X25 Limited Edition"><div class="cap">Xbox Series X25 Limited Edition · Novembro 2026</div></div>
     <div class="shot yt" id="yt" onclick="playYT()" role="button" title="assistir no player">
       <img src="https://i.ytimg.com/vi/1-INYU6FLgI/maxresdefault.jpg" alt="Xbox 25th Anniversary — vídeo"
            onerror="this.src='https://i.ytimg.com/vi/1-INYU6FLgI/hqdefault.jpg'">
@@ -399,7 +398,7 @@ PAGE = r"""<!DOCTYPE html>
   </aside>
   </div>
 
-  <div class="foot">xbox25bot · rodando neste Mac via launchd · checagem a cada 10 min · WhatsApp + push + voz quando abrir</div>
+  <div class="foot">xbox25bot · rodando neste Mac via launchd · varredura a cada 1 min · WhatsApp + push + voz quando abrir</div>
 </div>
 <div id="toast"></div>
 
@@ -472,7 +471,7 @@ async function refresh() {
   const newest = Math.max(0, ...sites.filter(s => s.last_check)
     .map(s => new Date(s.last_check.replace(' ', 'T')).getTime()));
   const ageMin = newest ? Math.round((Date.now() - newest) / 60000) : null;
-  const stale = ageMin === null || ageMin > 15;
+  const stale = ageMin === null || ageMin > 5;
 
   const pill = document.getElementById('pill');
   pill.className = 'pill' + (anyAlert ? ' alert' : stale ? ' warn' : '');

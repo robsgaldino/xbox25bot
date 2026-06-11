@@ -9,15 +9,13 @@
         <string>/Library/Frameworks/Python.framework/Versions/3.14/bin/python3</string>
         <string>/Users/robsgaldino/Library/Mobile Documents/com~apple~CloudDocs/bot-search/dashboard.py</string>
     </array>
-    <key>WorkingDirectory</key>
-    <string>/Users/robsgaldino/Library/Mobile Documents/com~apple~CloudDocs/bot-search</string>
     <key>KeepAlive</key>
     <true/>
     <key>RunAtLoad</key>
     <true/>
     <key>StandardOutPath</key>
-    <string>/Users/robsgaldino/Library/Mobile Documents/com~apple~CloudDocs/bot-search/dashboard.log</string>
+    <string>/Users/robsgaldino/Library/Logs/xbox25bot.dashboard.launchd.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/robsgaldino/Library/Mobile Documents/com~apple~CloudDocs/bot-search/dashboard.log</string>
+    <string>/Users/robsgaldino/Library/Logs/xbox25bot.dashboard.launchd.log</string>
 </dict>
 </plist>
