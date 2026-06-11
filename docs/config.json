@@ -1,0 +1,172 @@
+{
+  "sites": [
+    {
+      "id": "xbox_us",
+      "name": "Xbox.com EUA — 25th Anniversary",
+      "url": "https://www.xbox.com/en-US/xbox-25th-anniversary",
+      "signals": [
+        "pre-order",
+        "preorder",
+        "series x25",
+        "x25 limited",
+        "x25 special",
+        "shop now"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "xbox_us_consoles",
+      "name": "Xbox.com EUA — Consoles",
+      "url": "https://www.xbox.com/en-US/consoles",
+      "signals": [
+        "pre-order",
+        "preorder",
+        "x25"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "msstore_us",
+      "name": "Microsoft Store EUA — busca x25",
+      "url": "https://www.microsoft.com/en-us/search/shop?q=xbox+series+x25",
+      "signals": [
+        "pre-order",
+        "preorder",
+        "x25 limited",
+        "x25 special",
+        "series x25"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "newegg_us",
+      "name": "Newegg EUA — busca x25",
+      "url": "https://www.newegg.com/p/pl?d=xbox+series+x25",
+      "signals": [
+        "pre-order",
+        "preorder",
+        "x25 limited",
+        "25th anniversary"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "target_us",
+      "name": "Target EUA — busca x25",
+      "url": "https://www.target.com/s?searchTerm=xbox+series+x25",
+      "signals": [
+        "pre-order",
+        "preorder",
+        "x25 limited",
+        "25th anniversary"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "walmart_us",
+      "name": "Walmart EUA — busca x25",
+      "url": "https://www.walmart.com/search?q=xbox+series+x25",
+      "signals": [
+        "pre-order",
+        "preorder",
+        "x25 limited",
+        "25th anniversary"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "xbox_br",
+      "name": "Xbox.com Brasil — 25 anos (bônus)",
+      "url": "https://www.xbox.com/pt-BR/xbox-25th-anniversary",
+      "signals": [
+        "pré-venda",
+        "pre-order",
+        "preorder",
+        "series x25",
+        "x25 limited",
+        "x25 special"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "amazon_us",
+      "name": "Amazon EUA (anti-bot JS — desativado)",
+      "url": "https://www.amazon.com/s?k=xbox+series+x25",
+      "signals": [
+        "pre-order",
+        "preorder",
+        "x25 limited",
+        "25th anniversary"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "bestbuy_us",
+      "name": "Best Buy EUA (bloqueia bots — desativado)",
+      "url": "https://www.bestbuy.com/site/searchpage.jsp?st=xbox+series+x25",
+      "signals": [
+        "pre-order",
+        "preorder",
+        "x25 limited"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "gamestop_us",
+      "name": "GameStop EUA (bloqueia bots — desativado)",
+      "url": "https://www.gamestop.com/search/?q=xbox+series+x25",
+      "signals": [
+        "pre-order",
+        "preorder",
+        "x25 limited"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "costco_us",
+      "name": "Costco EUA (bloqueia bots — desativado)",
+      "url": "https://www.costco.com/CatalogSearch?dept=All&keyword=xbox+series+x25",
+      "signals": [
+        "pre-order",
+        "preorder",
+        "x25 limited"
+      ],
+      "enabled": false
+    },
+    {
+      "id": "antonline_us",
+      "name": "Antonline EUA (bloqueia bots — desativado)",
+      "url": "https://www.antonline.com/searchresult?searchKey=xbox%20series%20x25",
+      "signals": [
+        "pre-order",
+        "preorder",
+        "x25 limited"
+      ],
+      "enabled": false
+    }
+  ],
+  "channels": {
+    "macos": {
+      "enabled": false,
+      "speak": true,
+      "speak_text": "Atenção Robson! A pré-venda do Xbox 25 anos pode ter aberto! Corre!"
+    },
+    "ntfy": {
+      "enabled": false,
+      "topic": "definido-via-secret-NTFY_TOPIC"
+    },
+    "email": {
+      "enabled": false
+    },
+    "whatsapp_callmebot": {
+      "enabled": false,
+      "_setup": "via secrets CALLMEBOT_PHONE/CALLMEBOT_APIKEY"
+    },
+    "sms_twilio": {
+      "enabled": false
+    },
+    "telegram": {
+      "enabled": false
+    }
+  }
+}
