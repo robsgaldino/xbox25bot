@@ -45,7 +45,8 @@
                           box-shadow:none; animation-duration:9s; }
   .hero { position:relative; border-radius:22px; overflow:hidden; min-height:300px; display:flex;
           background:var(--glass); border:1px solid var(--stroke);
-          backdrop-filter:blur(22px); box-shadow:0 22px 70px rgba(0,0,0,.55); }
+          backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px);
+          box-shadow:0 22px 70px rgba(0,0,0,.55); }
   .hero .art { position:absolute; inset:0; background:url('assets/x25-console.jpg') right center/cover no-repeat;
                animation:kenburns 24s ease-in-out infinite alternate; }
   @keyframes kenburns { from { transform:scale(1.02);} to { transform:scale(1.1) translateX(-1.2%);} }
@@ -84,7 +85,8 @@
   .row { display:grid; gap:14px; grid-template-columns:repeat(auto-fill, minmax(225px, 1fr)); }
   .tile { position:relative; border-radius:16px; padding:18px; min-height:150px; cursor:pointer;
           display:flex; flex-direction:column; gap:8px; text-decoration:none; color:var(--txt);
-          background:var(--glass2); border:1.5px solid var(--stroke); backdrop-filter:blur(18px);
+          background:var(--glass2); border:1.5px solid var(--stroke);
+          backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px);
           transition:transform .22s cubic-bezier(.2,.9,.3,1.4), border-color .2s, box-shadow .25s; }
   .tile:hover { transform:scale(1.05); border-color:var(--lime); z-index:2;
                 box-shadow:0 0 0 2.5px var(--lime), 0 16px 44px rgba(0,0,0,.6), 0 0 34px rgba(155,240,11,.3); }
@@ -107,19 +109,46 @@
   .sig b { color:var(--lime); }
   .sig .hot { color:var(--red); font-weight:800; }
   .gallery { display:grid; gap:14px; grid-template-columns:1fr; }
-  .shot { border-radius:16px; overflow:hidden; border:1px solid var(--stroke); position:relative; height:420px; }
+  .shot { border-radius:16px; overflow:hidden; border:1px solid var(--stroke); position:relative; aspect-ratio:16/9; }
   .shot img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .6s ease; }
   .shot:hover img { transform:scale(1.06); }
   .shot .cap { position:absolute; left:0; right:0; bottom:0; padding:26px 16px 12px; font-size:12.5px; font-weight:600;
                background:linear-gradient(transparent, rgba(2,8,3,.92)); }
   .console { border-radius:16px; background:rgba(4,12,5,.72); border:1px solid var(--stroke);
-             backdrop-filter:blur(16px); padding:16px 18px; max-height:330px; overflow:auto;
+             backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+             padding:16px 18px; max-height:330px; overflow:auto;
              font:12px/1.75 "SF Mono", ui-monospace, Menlo, monospace; color:#a6d8a8; white-space:pre-wrap; }
   .console .ln-alert { color:#ff8b8b; font-weight:700; }
   .console .ln-err { color:var(--amber); }
   .foot { margin-top:34px; text-align:center; font-size:12px; color:var(--dim); opacity:.75; }
   .foot a { color:var(--lime); }
-  @media (max-width:760px) { .hero h1 { font-size:28px; } .hero .in { padding:26px; } #clock { display:none; } }
+  @media (max-width:760px) {
+    .wrap { padding:14px 14px 44px; }
+    .topbar { gap:12px; padding:6px 2px 12px; }
+    .logo { height:50px; }
+    .brand { display:none; }
+    #clock { display:none; }
+    .top-right { gap:10px; }
+    .lifeline { margin:0 2px 16px; }
+    .hero { min-height:0; border-radius:18px; }
+    .hero .veil { background:linear-gradient(160deg, rgba(3,10,4,.93) 45%, rgba(3,10,4,.6) 100%); }
+    .hero .in { padding:28px 20px; max-width:none; }
+    .hero h1 { font-size:27px; }
+    .hero p { font-size:14px; }
+    .cta .btn { width:100%; padding:14px 18px; }
+    h2.sec { font-size:17px; margin:28px 2px 12px; }
+    .row { gap:10px; }
+    .shot .cap { padding:22px 14px 10px; }
+    .console { max-height:250px; padding:12px 14px; word-break:break-word; }
+    .foot { margin-top:26px; }
+  }
+  @media (max-width:400px) {
+    .hero h1 { font-size:24px; }
+  }
+  @media (hover:none) {
+    .tile:hover { transform:none; }
+    .shot:hover img { transform:none; }
+  }
 </style></head><body>
 <div class="bg"></div>
 <div class="blob a"></div><div class="blob b"></div>

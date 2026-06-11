@@ -231,7 +231,7 @@ PAGE = r"""<!DOCTYPE html>
 
   /* galeria */
   .gallery { display:grid; gap:14px; grid-template-columns:1fr; }
-  .shot { border-radius:16px; overflow:hidden; border:1px solid var(--stroke); position:relative; height:420px; }
+  .shot { border-radius:16px; overflow:hidden; border:1px solid var(--stroke); position:relative; aspect-ratio:16/9; }
   .shot img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .6s ease; }
   .shot:hover img { transform:scale(1.06); }
   .shot .cap { position:absolute; left:0; right:0; bottom:0; padding:26px 16px 12px; font-size:12.5px; font-weight:600;
@@ -253,8 +253,38 @@ PAGE = r"""<!DOCTYPE html>
   @keyframes pop { from { transform:translateY(14px); opacity:0; } }
   .foot { margin-top:34px; text-align:center; font-size:12px; color:var(--dim); opacity:.75; }
   @media (max-width:760px) {
-    .hero h1 { font-size:30px; } .hero .in { padding:26px; } .gallery { grid-template-columns:1fr; }
+    .wrap { padding:14px 14px 44px; }
+    .topbar { gap:12px; padding:6px 2px 12px; }
+    .logo { height:50px; }
+    .brand { display:none; }
     #clock { display:none; }
+    .top-right { gap:10px; }
+    .gs { padding:5px 12px; font-size:12px; }
+    .lifeline { margin:0 2px 16px; }
+    .hero { min-height:0; border-radius:18px; }
+    .hero .veil { background:linear-gradient(160deg, rgba(3,10,4,.93) 45%, rgba(3,10,4,.6) 100%); }
+    .hero .in { padding:28px 20px; max-width:none; }
+    .hero h1 { font-size:27px; }
+    .hero p { font-size:14px; }
+    .cta .btn { width:100%; padding:14px 18px; }
+    h2.sec { font-size:17px; margin:28px 2px 12px; }
+    .row { gap:10px; }
+    .row.ch { grid-template-columns:1fr 1fr; }
+    .tile.chan { min-height:0; padding:14px; }
+    .gallery { grid-template-columns:1fr; }
+    .shot .cap { padding:22px 14px 10px; }
+    .console { max-height:250px; padding:12px 14px; white-space:pre-wrap; word-break:break-word; }
+    #toast { left:14px; right:14px; bottom:14px; justify-content:center; }
+    .foot { margin-top:26px; }
+  }
+  @media (max-width:400px) {
+    .hero h1 { font-size:24px; }
+    .row.ch { grid-template-columns:1fr; }
+  }
+  @media (hover:none) {
+    .tile:hover { transform:none; }
+    .shot:hover img { transform:none; }
+    .btn:hover { transform:none; }
   }
 </style></head><body>
 <div class="bg"></div>
