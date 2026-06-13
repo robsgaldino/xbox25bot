@@ -15,7 +15,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 04:45:54",
+      "last_check": "2026-06-13 04:49:53",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -45,7 +45,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 04:45:55",
+      "last_check": "2026-06-13 04:49:55",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -77,11 +77,11 @@
         1781336767.234388
       ],
       "fail_streak": 0,
-      "last_check": "2026-06-13 04:45:56",
+      "last_check": "2026-06-13 04:49:56",
       "last_counts": {
         "pre-order": 1,
         "preorder": 11,
-        "x25": 34,
+        "x25": 13,
         "series x25": 3,
         "series x 25": 0,
         "x25 limited": 0,
@@ -89,7 +89,7 @@
         "sx 25th": 0,
         "25th anniversary": 0
       },
-      "last_status": "ALERTA",
+      "last_status": "ok",
       "baseline_at": "2026-06-12 13:18:04",
       "last_trigger": "\"x25\" saltou de 13x para 34x"
     },
@@ -105,22 +105,25 @@
         "sx 25th": 0,
         "25th anniversary": 0
       },
-      "alerts": [],
+      "alerts": [
+        1781337008.0749297
+      ],
       "fail_streak": 0,
-      "last_check": "2026-06-13 04:46:09",
+      "last_check": "2026-06-13 04:50:07",
       "last_counts": {
         "pre-order": 0,
-        "preorder": 0,
-        "x25": 16,
-        "series x25": 16,
+        "preorder": 36,
+        "x25": 35,
+        "series x25": 17,
         "series x 25": 0,
         "x25 limited": 0,
         "x25 special": 0,
         "sx 25th": 0,
         "25th anniversary": 0
       },
-      "last_status": "ok",
-      "baseline_at": "2026-06-12 13:18:05"
+      "last_status": "ALERTA",
+      "baseline_at": "2026-06-12 13:18:05",
+      "last_trigger": "\"preorder\" apareceu (36x, antes 0)"
     },
     "target_us": {
       "baseline": {
@@ -136,7 +139,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 04:46:11",
+      "last_check": "2026-06-13 04:50:09",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -165,7 +168,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 04:46:12",
+      "last_check": "2026-06-13 04:50:11",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -196,7 +199,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 04:46:14",
+      "last_check": "2026-06-13 04:50:13",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -214,6 +217,6 @@
       "baseline_at": "2026-06-12 13:18:10"
     }
   },
-  "runs_since_hb": 922,
+  "runs_since_hb": 926,
   "last_heartbeat": 1781281091.9985526
 }
