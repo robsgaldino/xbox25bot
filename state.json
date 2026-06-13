@@ -15,7 +15,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 02:21:55",
+      "last_check": "2026-06-13 02:29:55",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -45,7 +45,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 02:21:56",
+      "last_check": "2026-06-13 02:29:56",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -72,13 +72,15 @@
         "sx 25th": 0,
         "25th anniversary": 0
       },
-      "alerts": [],
+      "alerts": [
+        1781328607.0861552
+      ],
       "fail_streak": 0,
-      "last_check": "2026-06-13 02:21:57",
+      "last_check": "2026-06-13 02:29:58",
       "last_counts": {
         "pre-order": 1,
         "preorder": 11,
-        "x25": 13,
+        "x25": 34,
         "series x25": 3,
         "series x 25": 0,
         "x25 limited": 0,
@@ -86,8 +88,9 @@
         "sx 25th": 0,
         "25th anniversary": 0
       },
-      "last_status": "ok",
-      "baseline_at": "2026-06-12 13:18:04"
+      "last_status": "ALERTA",
+      "baseline_at": "2026-06-12 13:18:04",
+      "last_trigger": "\"x25\" saltou de 13x para 34x"
     },
     "newegg_us": {
       "baseline": {
@@ -103,7 +106,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 02:22:09",
+      "last_check": "2026-06-13 02:30:08",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -132,7 +135,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 02:22:10",
+      "last_check": "2026-06-13 02:30:10",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -161,7 +164,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 02:22:12",
+      "last_check": "2026-06-13 02:30:11",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -192,7 +195,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 02:22:13",
+      "last_check": "2026-06-13 02:30:12",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -210,6 +213,6 @@
       "baseline_at": "2026-06-12 13:18:10"
     }
   },
-  "runs_since_hb": 779,
+  "runs_since_hb": 787,
   "last_heartbeat": 1781281091.9985526
 }
