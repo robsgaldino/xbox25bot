@@ -15,7 +15,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 04:42:44",
+      "last_check": "2026-06-13 04:45:54",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -45,7 +45,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 04:42:45",
+      "last_check": "2026-06-13 04:45:55",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -73,14 +73,15 @@
         "25th anniversary": 0
       },
       "alerts": [
-        1781328607.0861552
+        1781328607.0861552,
+        1781336767.234388
       ],
       "fail_streak": 0,
-      "last_check": "2026-06-13 04:42:46",
+      "last_check": "2026-06-13 04:45:56",
       "last_counts": {
         "pre-order": 1,
         "preorder": 11,
-        "x25": 13,
+        "x25": 34,
         "series x25": 3,
         "series x 25": 0,
         "x25 limited": 0,
@@ -88,7 +89,7 @@
         "sx 25th": 0,
         "25th anniversary": 0
       },
-      "last_status": "ok",
+      "last_status": "ALERTA",
       "baseline_at": "2026-06-12 13:18:04",
       "last_trigger": "\"x25\" saltou de 13x para 34x"
     },
@@ -106,7 +107,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 04:42:58",
+      "last_check": "2026-06-13 04:46:09",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -135,7 +136,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 04:42:59",
+      "last_check": "2026-06-13 04:46:11",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -164,7 +165,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 04:43:01",
+      "last_check": "2026-06-13 04:46:12",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -195,7 +196,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-13 04:43:02",
+      "last_check": "2026-06-13 04:46:14",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -213,6 +214,6 @@
       "baseline_at": "2026-06-12 13:18:10"
     }
   },
-  "runs_since_hb": 919,
+  "runs_since_hb": 922,
   "last_heartbeat": 1781281091.9985526
 }
