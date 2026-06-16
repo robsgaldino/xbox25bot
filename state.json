@@ -15,7 +15,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-16 05:04:45",
+      "last_check": "2026-06-16 05:12:45",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -45,7 +45,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-16 05:04:46",
+      "last_check": "2026-06-16 05:12:46",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -74,7 +74,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-16 05:04:47",
+      "last_check": "2026-06-16 05:12:47",
       "last_counts": {
         "pre-order": 1,
         "preorder": 11,
@@ -103,7 +103,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-16 05:04:58",
+      "last_check": "2026-06-16 05:12:58",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -132,7 +132,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-16 05:04:59",
+      "last_check": "2026-06-16 05:12:59",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -163,7 +163,7 @@
         1781580662.0077333
       ],
       "fail_streak": 0,
-      "last_check": "2026-06-16 05:05:00",
+      "last_check": "2026-06-16 05:13:01",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -193,13 +193,15 @@
         "pré-venda": 0,
         "25 anos": 6
       },
-      "alerts": [],
+      "alerts": [
+        1781597582.8517625
+      ],
       "fail_streak": 0,
-      "last_check": "2026-06-16 05:05:02",
+      "last_check": "2026-06-16 05:13:02",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
-        "x25": 0,
+        "x25": 1,
         "series x25": 0,
         "series x 25": 0,
         "x25 limited": 0,
@@ -209,10 +211,11 @@
         "pré-venda": 0,
         "25 anos": 6
       },
-      "last_status": "ok",
-      "baseline_at": "2026-06-15 18:19:43"
+      "last_status": "ALERTA",
+      "baseline_at": "2026-06-15 18:19:43",
+      "last_trigger": "\"x25\" apareceu (1x, antes 0)"
     }
   },
-  "runs_since_hb": 639,
+  "runs_since_hb": 647,
   "last_heartbeat": 1781558385.3444123
 }
