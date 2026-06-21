@@ -13,13 +13,15 @@
         "25th anniversary": 20,
         "shop now": 0
       },
-      "alerts": [],
+      "alerts": [
+        1782076093.6739535
+      ],
       "fail_streak": 0,
-      "last_check": "2026-06-21 18:07:03",
+      "last_check": "2026-06-21 18:08:13",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
-        "x25": 0,
+        "x25": 1,
         "series x25": 0,
         "series x 25": 0,
         "x25 limited": 0,
@@ -28,8 +30,9 @@
         "25th anniversary": 20,
         "shop now": 0
       },
-      "last_status": "ok",
-      "baseline_at": "2026-06-19 10:28:58"
+      "last_status": "ALERTA",
+      "baseline_at": "2026-06-19 10:28:58",
+      "last_trigger": "\"x25\" apareceu (1x, antes 0)"
     },
     "xbox_us_consoles": {
       "baseline": {
@@ -45,7 +48,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-21 18:07:05",
+      "last_check": "2026-06-21 18:08:15",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -76,7 +79,7 @@
         1781894399.5681887
       ],
       "fail_streak": 0,
-      "last_check": "2026-06-21 18:07:06",
+      "last_check": "2026-06-21 18:08:16",
       "last_counts": {
         "pre-order": 1,
         "preorder": 11,
@@ -106,7 +109,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-21 18:07:16",
+      "last_check": "2026-06-21 18:08:26",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -135,7 +138,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-21 18:07:17",
+      "last_check": "2026-06-21 18:08:27",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -166,7 +169,7 @@
         1782051428.0488067
       ],
       "fail_streak": 0,
-      "last_check": "2026-06-21 18:07:19",
+      "last_check": "2026-06-21 18:08:29",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -198,7 +201,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-21 18:07:20",
+      "last_check": "2026-06-21 18:08:30",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -216,6 +219,6 @@
       "baseline_at": "2026-06-19 10:29:14"
     }
   },
-  "runs_since_hb": 573,
+  "runs_since_hb": 574,
   "last_heartbeat": 1782041465.6013691
 }
