@@ -15,7 +15,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-24 11:20:46",
+      "last_check": "2026-06-24 11:30:46",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -45,7 +45,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-24 11:20:47",
+      "last_check": "2026-06-24 11:30:48",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -74,7 +74,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-24 11:20:48",
+      "last_check": "2026-06-24 11:30:49",
       "last_counts": {
         "pre-order": 1,
         "preorder": 11,
@@ -103,7 +103,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-24 11:21:00",
+      "last_check": "2026-06-24 11:30:59",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -132,7 +132,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-24 11:21:01",
+      "last_check": "2026-06-24 11:31:00",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -161,24 +161,25 @@
       },
       "alerts": [
         1782289561.9061928,
-        1782299702.6204376
+        1782299702.6204376,
+        1782311463.5490007
       ],
       "fail_streak": 0,
-      "last_check": "2026-06-24 11:21:03",
+      "last_check": "2026-06-24 11:31:01",
       "last_counts": {
-        "pre-order": 0,
-        "preorder": 0,
-        "x25": 0,
-        "series x25": 0,
-        "series x 25": 0,
+        "pre-order": 8,
+        "preorder": 225,
+        "x25": 70,
+        "series x25": 37,
+        "series x 25": 38,
         "x25 limited": 0,
         "x25 special": 0,
         "sx 25th": 0,
         "25th anniversary": 0
       },
-      "last_status": "ok",
+      "last_status": "ALERTA",
       "baseline_at": "2026-06-23 17:36:05",
-      "last_trigger": "\"pre-order\" apareceu (4x, antes 0); \"preorder\" apareceu (250x, antes 0); \"x25\" apareceu (70x, antes 0); \"series x25\" apareceu (37x, antes 0); \"series x 25\" apareceu (33x, antes 0)"
+      "last_trigger": "\"pre-order\" apareceu (8x, antes 0); \"preorder\" apareceu (225x, antes 0); \"x25\" apareceu (70x, antes 0); \"series x25\" apareceu (37x, antes 0); \"series x 25\" apareceu (38x, antes 0)"
     },
     "xbox_br": {
       "baseline": {
@@ -196,7 +197,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-06-24 11:21:04",
+      "last_check": "2026-06-24 11:31:05",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -214,6 +215,6 @@
       "baseline_at": "2026-06-23 17:36:06"
     }
   },
-  "runs_since_hb": 1059,
+  "runs_since_hb": 1069,
   "last_heartbeat": 1782246968.4261873
 }
