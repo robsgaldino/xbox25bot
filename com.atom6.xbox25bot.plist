@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.atom6.xbox25bot</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Library/Frameworks/Python.framework/Versions/3.14/bin/python3</string>
+		<string>/Users/SEU_USUARIO/caminho/para/xbox25bot/xbox25bot.py</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/Users/SEU_USUARIO/Library/Logs/xbox25bot.launchd.log</string>
+	<key>StandardOutPath</key>
+	<string>/Users/SEU_USUARIO/Library/Logs/xbox25bot.launchd.log</string>
+	<key>StartInterval</key>
+	<integer>60</integer>
+</dict>
+</plist>
