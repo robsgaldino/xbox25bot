@@ -19,7 +19,7 @@
         1787824868.569001
       ],
       "fail_streak": 0,
-      "last_check": "2026-08-27 11:50:59",
+      "last_check": "2026-08-27 12:00:59",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -50,7 +50,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-08-27 11:51:00",
+      "last_check": "2026-08-27 12:01:00",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -85,7 +85,7 @@
         1787839425.5883124
       ],
       "fail_streak": 0,
-      "last_check": "2026-08-27 11:51:01",
+      "last_check": "2026-08-27 12:01:01",
       "last_counts": {
         "pre-order": 3,
         "preorder": 12,
@@ -121,11 +121,11 @@
         1787780099.5973856
       ],
       "fail_streak": 0,
-      "last_check": "2026-08-27 11:51:11",
+      "last_check": "2026-08-27 12:01:12",
       "last_counts": {
-        "pre-order": 3,
-        "preorder": 36,
-        "x25": 45,
+        "pre-order": 0,
+        "preorder": 1,
+        "x25": 29,
         "series x25": 16,
         "series x 25": 0,
         "x25 limited": 0,
@@ -135,7 +135,7 @@
       },
       "last_status": "ALERTA",
       "baseline_at": "2026-08-25 20:02:16",
-      "last_trigger": "\"pre-order\" apareceu (3x, antes 0); \"preorder\" apareceu (36x, antes 0); \"x25\" saltou de 16x para 45x; \"x25 special\" apareceu (11x, antes 0)"
+      "last_trigger": "\"preorder\" apareceu (1x, antes 0); \"x25 special\" apareceu (11x, antes 0)"
     },
     "target_us": {
       "baseline": {
@@ -151,7 +151,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-08-27 11:51:12",
+      "last_check": "2026-08-27 12:01:13",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -180,7 +180,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-08-27 11:51:14",
+      "last_check": "2026-08-27 12:01:14",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -211,7 +211,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-08-27 11:51:15",
+      "last_check": "2026-08-27 12:01:16",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -229,6 +229,6 @@
       "baseline_at": "2026-08-25 20:02:20"
     }
   },
-  "runs_since_hb": 1002,
+  "runs_since_hb": 1012,
   "last_heartbeat": 1787781793.8578846
 }
