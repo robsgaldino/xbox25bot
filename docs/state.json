@@ -19,7 +19,7 @@
         1787824868.569001
       ],
       "fail_streak": 0,
-      "last_check": "2026-08-27 15:02:13",
+      "last_check": "2026-08-27 15:12:13",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -50,7 +50,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-08-27 15:02:14",
+      "last_check": "2026-08-27 15:12:14",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -84,8 +84,8 @@
         1787839366.3246424,
         1787839425.5883124
       ],
-      "fail_streak": 0,
-      "last_check": "2026-08-27 15:02:16",
+      "fail_streak": 3,
+      "last_check": "2026-08-27 15:12:16",
       "last_counts": {
         "pre-order": 3,
         "preorder": 12,
@@ -97,7 +97,7 @@
         "sx 25th": 0,
         "25th anniversary": 0
       },
-      "last_status": "ALERTA",
+      "last_status": "bloqueado",
       "baseline_at": "2026-08-25 20:02:15",
       "last_trigger": "\"x25\" saltou de 13x para 33x; \"series x25\" saltou de 3x para 11x; \"x25 limited\" apareceu (6x, antes 0); \"x25 special\" apareceu (1x, antes 0)"
     },
@@ -121,7 +121,7 @@
         1787780099.5973856
       ],
       "fail_streak": 0,
-      "last_check": "2026-08-27 15:02:26",
+      "last_check": "2026-08-27 15:12:33",
       "last_counts": {
         "pre-order": 0,
         "preorder": 1,
@@ -151,7 +151,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-08-27 15:02:27",
+      "last_check": "2026-08-27 15:12:34",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -180,7 +180,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-08-27 15:02:29",
+      "last_check": "2026-08-27 15:12:36",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -211,7 +211,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-08-27 15:02:30",
+      "last_check": "2026-08-27 15:12:37",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -229,6 +229,6 @@
       "baseline_at": "2026-08-25 20:02:20"
     }
   },
-  "runs_since_hb": 1192,
+  "runs_since_hb": 1202,
   "last_heartbeat": 1787781793.8578846
 }
