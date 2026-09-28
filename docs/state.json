@@ -15,7 +15,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-09-28 18:01:22",
+      "last_check": "2026-09-28 18:21:33",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -29,7 +29,7 @@
         "shop now": 0
       },
       "last_status": "ok",
-      "baseline_at": "2026-09-21 04:23:10"
+      "baseline_at": "2026-09-28 18:12:33"
     },
     "xbox_us_consoles": {
       "baseline": {
@@ -45,7 +45,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-09-28 18:01:24",
+      "last_check": "2026-09-28 18:21:34",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -58,7 +58,7 @@
         "25th anniversary": 6
       },
       "last_status": "ok",
-      "baseline_at": "2026-09-21 04:23:11"
+      "baseline_at": "2026-09-28 18:12:35"
     },
     "msstore_us": {
       "baseline": {
@@ -74,7 +74,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-09-28 18:01:25",
+      "last_check": "2026-09-28 18:21:35",
       "last_counts": {
         "pre-order": 3,
         "preorder": 12,
@@ -87,23 +87,23 @@
         "25th anniversary": 0
       },
       "last_status": "ok",
-      "baseline_at": "2026-09-21 04:23:20"
+      "baseline_at": "2026-09-28 18:12:45"
     },
     "newegg_us": {
       "baseline": {
         "pre-order": 0,
-        "preorder": 1,
-        "x25": 31,
-        "series x25": 16,
+        "preorder": 0,
+        "x25": 15,
+        "series x25": 15,
         "series x 25": 0,
         "x25 limited": 0,
-        "x25 special": 11,
+        "x25 special": 0,
         "sx 25th": 0,
         "25th anniversary": 0
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-09-28 18:01:37",
+      "last_check": "2026-09-28 18:21:46",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -116,7 +116,7 @@
         "25th anniversary": 0
       },
       "last_status": "ok",
-      "baseline_at": "2026-09-21 04:23:21"
+      "baseline_at": "2026-09-28 18:12:47"
     },
     "target_us": {
       "baseline": {
@@ -132,7 +132,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-09-28 18:01:38",
+      "last_check": "2026-09-28 18:21:47",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -145,7 +145,7 @@
         "25th anniversary": 0
       },
       "last_status": "ok",
-      "baseline_at": "2026-09-21 04:23:23"
+      "baseline_at": "2026-09-28 18:12:49"
     },
     "walmart_us": {
       "baseline": {
@@ -159,11 +159,9 @@
         "sx 25th": 0,
         "25th anniversary": 0
       },
-      "alerts": [
-        1790306374.8991885
-      ],
+      "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-09-28 18:01:39",
+      "last_check": "2026-09-28 18:21:49",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -176,8 +174,7 @@
         "25th anniversary": 0
       },
       "last_status": "ok",
-      "baseline_at": "2026-09-21 04:23:24",
-      "last_trigger": "\"pre-order\" apareceu (8x, antes 0); \"preorder\" apareceu (313x, antes 0); \"x25\" apareceu (60x, antes 0); \"series x25\" apareceu (38x, antes 0); \"series x 25\" apareceu (43x, antes 0)"
+      "baseline_at": "2026-09-28 18:12:50"
     },
     "xbox_br": {
       "baseline": {
@@ -195,7 +192,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-09-28 18:01:41",
+      "last_check": "2026-09-28 18:21:50",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -210,9 +207,9 @@
         "25 anos": 8
       },
       "last_status": "ok",
-      "baseline_at": "2026-09-21 04:23:25"
+      "baseline_at": "2026-09-28 18:12:51"
     }
   },
-  "runs_since_hb": 597,
-  "last_heartbeat": 1790593242.0243828
+  "runs_since_hb": 9,
+  "last_heartbeat": 1790629972.9076264
 }
