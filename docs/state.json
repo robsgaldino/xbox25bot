@@ -15,7 +15,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-09-30 05:56:14",
+      "last_check": "2026-09-30 06:06:14",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -45,7 +45,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-09-30 05:56:16",
+      "last_check": "2026-09-30 06:06:16",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -73,8 +73,8 @@
         "25th anniversary": 0
       },
       "alerts": [],
-      "fail_streak": 0,
-      "last_check": "2026-09-30 05:56:17",
+      "fail_streak": 1,
+      "last_check": "2026-09-30 06:06:17",
       "last_counts": {
         "pre-order": 3,
         "preorder": 12,
@@ -86,7 +86,7 @@
         "sx 25th": 0,
         "25th anniversary": 0
       },
-      "last_status": "ok",
+      "last_status": "erro",
       "baseline_at": "2026-09-28 18:12:45"
     },
     "newegg_us": {
@@ -103,12 +103,12 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-09-30 05:56:29",
+      "last_check": "2026-09-30 06:06:31",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
-        "x25": 16,
-        "series x25": 16,
+        "x25": 15,
+        "series x25": 15,
         "series x 25": 0,
         "x25 limited": 0,
         "x25 special": 0,
@@ -132,7 +132,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-09-30 05:56:30",
+      "last_check": "2026-09-30 06:06:33",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -161,7 +161,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-09-30 05:56:32",
+      "last_check": "2026-09-30 06:06:34",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -196,7 +196,7 @@
         1790658825.681785
       ],
       "fail_streak": 0,
-      "last_check": "2026-09-30 05:56:33",
+      "last_check": "2026-09-30 06:06:36",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -215,6 +215,6 @@
       "last_trigger": "\"x25\" apareceu (1x, antes 0)"
     }
   },
-  "runs_since_hb": 759,
+  "runs_since_hb": 769,
   "last_heartbeat": 1790712788.9663568
 }
