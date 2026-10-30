@@ -1,120 +1,80 @@
-[2026-10-30 01:47:52] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 01:47:54] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 01:48:05] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:48:07] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22069]
-[2026-10-30 01:48:08] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 14, 'series x25': 12, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:48:09] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:48:10] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
-[2026-10-30 01:48:53] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 01:48:54] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 01:49:05] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:49:07] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22070]
-[2026-10-30 01:49:08] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 16, 'series x25': 14, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:49:09] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:49:10] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
-[2026-10-30 01:49:52] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 01:49:54] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 01:50:05] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:50:06] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22071]
-[2026-10-30 01:50:08] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 14, 'series x25': 12, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:50:09] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:50:10] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
-[2026-10-30 01:50:53] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 01:50:54] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 01:51:03] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:51:04] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22072]
-[2026-10-30 01:51:06] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 14, 'series x25': 12, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:51:07] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:51:08] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
-[2026-10-30 01:51:52] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 01:51:54] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 01:52:05] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:52:06] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22073]
-[2026-10-30 01:52:07] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 14, 'series x25': 12, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:52:09] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:52:10] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
-[2026-10-30 01:52:52] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 01:52:53] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 01:53:03] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:53:04] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22074]
-[2026-10-30 01:53:05] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 16, 'series x25': 14, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:53:07] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:53:08] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
-[2026-10-30 01:53:52] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 01:53:53] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 01:54:04] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:54:05] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22075]
-[2026-10-30 01:54:06] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 16, 'series x25': 14, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:54:08] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:54:09] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
-[2026-10-30 01:54:52] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 01:54:54] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 01:55:03] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:55:04] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22076]
-[2026-10-30 01:55:06] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 16, 'series x25': 14, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:55:07] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:55:08] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
-[2026-10-30 01:55:52] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 01:55:53] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 01:56:04] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:56:05] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22077]
-[2026-10-30 01:56:06] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 14, 'series x25': 12, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:56:08] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:56:09] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
-[2026-10-30 01:56:52] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 01:56:54] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 01:57:04] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:57:05] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22078]
-[2026-10-30 01:57:07] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 14, 'series x25': 12, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:57:08] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:57:09] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
-[2026-10-30 01:57:52] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 01:57:54] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 01:58:04] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:58:05] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22079]
-[2026-10-30 01:58:07] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 14, 'series x25': 12, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:58:08] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:58:09] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
-[2026-10-30 01:58:52] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 01:58:53] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 01:59:03] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:59:04] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22080]
-[2026-10-30 01:59:06] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 16, 'series x25': 14, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:59:07] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 01:59:08] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
-[2026-10-30 01:59:52] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 01:59:54] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 02:00:04] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 02:00:05] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22081]
-[2026-10-30 02:00:07] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 16, 'series x25': 14, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 02:00:08] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 02:00:09] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
-[2026-10-30 02:00:53] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 02:00:54] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 02:01:04] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 02:01:05] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22082]
-[2026-10-30 02:01:07] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 14, 'series x25': 12, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 02:01:08] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 02:01:09] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
-[2026-10-30 02:01:52] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
-[2026-10-30 02:01:54] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
-[2026-10-30 02:02:03] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 02:02:04] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
-) [falhas seguidas: 22083]
-[2026-10-30 02:02:05] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 14, 'series x25': 12, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 02:02:07] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
-[2026-10-30 02:02:08] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
+[2026-10-30 02:03:03] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
+[2026-10-30 02:03:05] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
+[2026-10-30 02:03:16] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:03:17] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
+) [falhas seguidas: 22084]
+[2026-10-30 02:03:18] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 16, 'series x25': 14, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:03:20] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:03:21] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
+[2026-10-30 02:04:02] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
+[2026-10-30 02:04:04] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
+[2026-10-30 02:04:14] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:04:15] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
+) [falhas seguidas: 22085]
+[2026-10-30 02:04:17] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 16, 'series x25': 14, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:04:18] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:04:19] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
+[2026-10-30 02:05:02] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
+[2026-10-30 02:05:04] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
+[2026-10-30 02:05:13] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:05:14] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
+) [falhas seguidas: 22086]
+[2026-10-30 02:05:16] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 14, 'series x25': 12, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:05:17] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:05:18] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
+[2026-10-30 02:06:03] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
+[2026-10-30 02:06:04] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
+[2026-10-30 02:06:13] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:06:15] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
+) [falhas seguidas: 22087]
+[2026-10-30 02:06:16] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 16, 'series x25': 14, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:06:17] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:06:19] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
+[2026-10-30 02:07:02] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
+[2026-10-30 02:07:03] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
+[2026-10-30 02:07:15] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:07:16] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
+) [falhas seguidas: 22088]
+[2026-10-30 02:07:17] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 16, 'series x25': 14, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:07:18] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:07:20] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
+[2026-10-30 02:08:02] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
+[2026-10-30 02:08:03] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
+[2026-10-30 02:08:13] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:08:14] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
+) [falhas seguidas: 22089]
+[2026-10-30 02:08:15] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 16, 'series x25': 14, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:08:16] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:08:17] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
+[2026-10-30 02:09:03] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
+[2026-10-30 02:09:04] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
+[2026-10-30 02:09:14] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:09:15] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
+) [falhas seguidas: 22090]
+[2026-10-30 02:09:16] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 16, 'series x25': 14, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:09:18] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:09:19] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
+[2026-10-30 02:10:02] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
+[2026-10-30 02:10:04] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
+[2026-10-30 02:10:13] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:10:14] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
+) [falhas seguidas: 22091]
+[2026-10-30 02:10:16] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 16, 'series x25': 14, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:10:17] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:10:18] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
+[2026-10-30 02:11:02] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
+[2026-10-30 02:11:03] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
+[2026-10-30 02:11:15] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:11:16] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
+) [falhas seguidas: 22092]
+[2026-10-30 02:11:17] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 14, 'series x25': 12, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:11:19] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:11:20] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
+[2026-10-30 02:12:02] xbox_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 26, 'shop now': 0}
+[2026-10-30 02:12:03] xbox_us_consoles: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 10, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 6}
+[2026-10-30 02:12:13] msstore_us: ok, sem novidade {'pre-order': 3, 'preorder': 11, 'x25': 33, 'series x25': 11, 'series x 25': 0, 'x25 limited': 6, 'x25 special': 1, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:12:14] newegg_us: ERRO ao buscar (curl rc=22: curl: (22) The requested URL returned error: 403
+) [falhas seguidas: 22093]
+[2026-10-30 02:12:15] target_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 16, 'series x25': 14, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:12:17] walmart_us: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 0}
+[2026-10-30 02:12:18] xbox_br: ok, sem novidade {'pre-order': 0, 'preorder': 0, 'x25': 0, 'series x25': 0, 'series x 25': 0, 'x25 limited': 0, 'x25 special': 0, 'sx 25th': 0, '25th anniversary': 2, 'pré-venda': 0, '25 anos': 8}
