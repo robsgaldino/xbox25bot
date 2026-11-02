@@ -15,7 +15,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-02 16:04:04",
+      "last_check": "2026-11-02 16:14:32",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -45,7 +45,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-02 16:04:06",
+      "last_check": "2026-11-02 16:14:33",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -73,8 +73,8 @@
         "25th anniversary": 0
       },
       "alerts": [],
-      "fail_streak": 0,
-      "last_check": "2026-11-02 16:04:07",
+      "fail_streak": 1,
+      "last_check": "2026-11-02 16:14:34",
       "last_counts": {
         "pre-order": 3,
         "preorder": 12,
@@ -86,7 +86,7 @@
         "sx 25th": 0,
         "25th anniversary": 0
       },
-      "last_status": "ok",
+      "last_status": "erro",
       "baseline_at": "2026-10-05 23:03:59"
     },
     "newegg_us": {
@@ -102,8 +102,8 @@
         "25th anniversary": 0
       },
       "alerts": [],
-      "fail_streak": 27213,
-      "last_check": "2026-11-02 16:04:17",
+      "fail_streak": 27223,
+      "last_check": "2026-11-02 16:14:52",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -132,12 +132,12 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-02 16:04:18",
+      "last_check": "2026-11-02 16:14:53",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
-        "x25": 24,
-        "series x25": 19,
+        "x25": 22,
+        "series x25": 17,
         "series x 25": 0,
         "x25 limited": 0,
         "x25 special": 0,
@@ -163,7 +163,7 @@
         1792651341.8359852
       ],
       "fail_streak": 0,
-      "last_check": "2026-11-02 16:04:20",
+      "last_check": "2026-11-02 16:14:55",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -200,7 +200,7 @@
         1793361580.3417668
       ],
       "fail_streak": 0,
-      "last_check": "2026-11-02 16:04:21",
+      "last_check": "2026-11-02 16:14:56",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -219,6 +219,6 @@
       "last_trigger": "\"x25\" apareceu (1x, antes 0)"
     }
   },
-  "runs_since_hb": 479,
+  "runs_since_hb": 489,
   "last_heartbeat": 1793617265.396984
 }
