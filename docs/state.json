@@ -15,7 +15,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-12 19:04:41",
+      "last_check": "2026-11-12 19:14:41",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -45,7 +45,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-12 19:04:42",
+      "last_check": "2026-11-12 19:14:43",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -73,8 +73,8 @@
         "25th anniversary": 0
       },
       "alerts": [],
-      "fail_streak": 0,
-      "last_check": "2026-11-12 19:04:43",
+      "fail_streak": 1,
+      "last_check": "2026-11-12 19:14:44",
       "last_counts": {
         "pre-order": 3,
         "preorder": 12,
@@ -86,14 +86,14 @@
         "sx 25th": 0,
         "25th anniversary": 0
       },
-      "last_status": "ok",
+      "last_status": "erro",
       "baseline_at": "2026-11-10 16:49:57"
     },
     "newegg_us": {
       "baseline": null,
       "alerts": [],
-      "fail_streak": 2920,
-      "last_check": "2026-11-12 19:04:55",
+      "fail_streak": 2930,
+      "last_check": "2026-11-12 19:15:10",
       "last_status": "erro"
     },
     "target_us": {
@@ -110,7 +110,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-12 19:04:56",
+      "last_check": "2026-11-12 19:15:11",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -139,7 +139,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-12 19:04:58",
+      "last_check": "2026-11-12 19:15:12",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -170,7 +170,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-12 19:04:59",
+      "last_check": "2026-11-12 19:15:14",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -188,6 +188,6 @@
       "baseline_at": "2026-11-10 16:50:03"
     }
   },
-  "runs_since_hb": 253,
+  "runs_since_hb": 263,
   "last_heartbeat": 1794505828.5849693
 }
