@@ -14,8 +14,8 @@
         "shop now": 0
       },
       "alerts": [],
-      "fail_streak": 0,
-      "last_check": "2026-11-12 03:08:06",
+      "fail_streak": 1,
+      "last_check": "2026-11-12 03:18:19",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -28,7 +28,7 @@
         "25th anniversary": 26,
         "shop now": 0
       },
-      "last_status": "ok",
+      "last_status": "erro",
       "baseline_at": "2026-11-10 16:49:47"
     },
     "xbox_us_consoles": {
@@ -44,8 +44,8 @@
         "25th anniversary": 6
       },
       "alerts": [],
-      "fail_streak": 0,
-      "last_check": "2026-11-12 03:08:07",
+      "fail_streak": 1,
+      "last_check": "2026-11-12 03:18:40",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -57,7 +57,7 @@
         "sx 25th": 0,
         "25th anniversary": 6
       },
-      "last_status": "ok",
+      "last_status": "erro",
       "baseline_at": "2026-11-10 16:49:48"
     },
     "msstore_us": {
@@ -73,8 +73,8 @@
         "25th anniversary": 0
       },
       "alerts": [],
-      "fail_streak": 0,
-      "last_check": "2026-11-12 03:08:08",
+      "fail_streak": 1,
+      "last_check": "2026-11-12 03:19:01",
       "last_counts": {
         "pre-order": 3,
         "preorder": 12,
@@ -86,14 +86,14 @@
         "sx 25th": 0,
         "25th anniversary": 0
       },
-      "last_status": "ok",
+      "last_status": "erro",
       "baseline_at": "2026-11-10 16:49:57"
     },
     "newegg_us": {
       "baseline": null,
       "alerts": [],
-      "fail_streak": 1970,
-      "last_check": "2026-11-12 03:08:21",
+      "fail_streak": 1980,
+      "last_check": "2026-11-12 03:19:22",
       "last_status": "erro"
     },
     "target_us": {
@@ -110,7 +110,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-12 03:08:22",
+      "last_check": "2026-11-12 03:19:39",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -139,7 +139,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-12 03:08:24",
+      "last_check": "2026-11-12 03:19:41",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -170,7 +170,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-12 03:08:25",
+      "last_check": "2026-11-12 03:19:43",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -188,6 +188,6 @@
       "baseline_at": "2026-11-10 16:50:03"
     }
   },
-  "runs_since_hb": 597,
+  "runs_since_hb": 607,
   "last_heartbeat": 1794423025.1455355
 }
