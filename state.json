@@ -19,7 +19,7 @@
         1794597040.8675785
       ],
       "fail_streak": 0,
-      "last_check": "2026-11-17 14:07:58",
+      "last_check": "2026-11-17 14:14:58",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -50,7 +50,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-17 14:07:59",
+      "last_check": "2026-11-17 14:14:59",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -79,7 +79,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-17 14:08:00",
+      "last_check": "2026-11-17 14:15:00",
       "last_counts": {
         "pre-order": 1,
         "preorder": 12,
@@ -97,8 +97,8 @@
     "newegg_us": {
       "baseline": null,
       "alerts": [],
-      "fail_streak": 9763,
-      "last_check": "2026-11-17 14:08:10",
+      "fail_streak": 9770,
+      "last_check": "2026-11-17 14:15:09",
       "last_status": "erro"
     },
     "target_us": {
@@ -115,7 +115,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-17 14:08:11",
+      "last_check": "2026-11-17 14:15:10",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -146,19 +146,19 @@
         1794935295.107072
       ],
       "fail_streak": 0,
-      "last_check": "2026-11-17 14:08:13",
+      "last_check": "2026-11-17 14:15:12",
       "last_counts": {
-        "pre-order": 8,
-        "preorder": 233,
-        "x25": 84,
-        "series x25": 37,
-        "series x 25": 58,
+        "pre-order": 0,
+        "preorder": 0,
+        "x25": 0,
+        "series x25": 0,
+        "series x 25": 0,
         "x25 limited": 0,
-        "x25 special": 6,
+        "x25 special": 0,
         "sx 25th": 0,
         "25th anniversary": 0
       },
-      "last_status": "ALERTA",
+      "last_status": "ok",
       "baseline_at": "2026-11-10 16:50:01",
       "last_trigger": "\"pre-order\" apareceu (8x, antes 0); \"preorder\" apareceu (233x, antes 0); \"x25\" apareceu (84x, antes 0); \"series x25\" apareceu (37x, antes 0); \"series x 25\" apareceu (58x, antes 0); \"x25 special\" apareceu (6x, antes 0)"
     },
@@ -178,7 +178,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-17 14:08:16",
+      "last_check": "2026-11-17 14:15:13",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -196,6 +196,6 @@
       "baseline_at": "2026-11-10 16:50:03"
     }
   },
-  "runs_since_hb": 254,
+  "runs_since_hb": 261,
   "last_heartbeat": 1794919941.8374944
 }
