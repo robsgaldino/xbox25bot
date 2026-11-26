@@ -15,7 +15,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-26 01:33:43",
+      "last_check": "2026-11-26 01:43:52",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -45,7 +45,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-26 01:33:44",
+      "last_check": "2026-11-26 01:43:53",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -80,11 +80,11 @@
         1795652551.2642858
       ],
       "fail_streak": 0,
-      "last_check": "2026-11-26 01:33:45",
+      "last_check": "2026-11-26 01:43:54",
       "last_counts": {
         "pre-order": 1,
         "preorder": 12,
-        "x25": 66,
+        "x25": 33,
         "series x25": 11,
         "series x 25": 0,
         "x25 limited": 6,
@@ -94,13 +94,13 @@
       },
       "last_status": "ALERTA",
       "baseline_at": "2026-11-23 11:49:10",
-      "last_trigger": "\"x25\" saltou de 13x para 66x; \"series x25\" saltou de 3x para 11x; \"x25 limited\" apareceu (6x, antes 0); \"x25 special\" apareceu (1x, antes 0)"
+      "last_trigger": "\"x25\" saltou de 13x para 33x; \"series x25\" saltou de 3x para 11x; \"x25 limited\" apareceu (6x, antes 0); \"x25 special\" apareceu (1x, antes 0)"
     },
     "newegg_us": {
       "baseline": null,
       "alerts": [],
-      "fail_streak": 3230,
-      "last_check": "2026-11-26 01:33:57",
+      "fail_streak": 3240,
+      "last_check": "2026-11-26 01:44:05",
       "last_status": "erro"
     },
     "target_us": {
@@ -117,7 +117,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-26 01:33:58",
+      "last_check": "2026-11-26 01:44:06",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -146,7 +146,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-26 01:33:59",
+      "last_check": "2026-11-26 01:44:07",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -177,7 +177,7 @@
       },
       "alerts": [],
       "fail_streak": 0,
-      "last_check": "2026-11-26 01:34:00",
+      "last_check": "2026-11-26 01:44:09",
       "last_counts": {
         "pre-order": 0,
         "preorder": 0,
@@ -195,6 +195,6 @@
       "baseline_at": "2026-11-23 11:49:14"
     }
   },
-  "runs_since_hb": 486,
+  "runs_since_hb": 496,
   "last_heartbeat": 1795611002.3969116
 }
